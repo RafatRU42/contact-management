@@ -1,21 +1,15 @@
+import { RouterProvider } from "react-router-dom"
+import { route } from "./Pages/Router"
 
 
 function App() {
 
   return (
-    <>
-      <div>
-       <h1>this is new app</h1>
-       <button className="btn">Button</button>
-<button className="btn btn-neutral">Neutral</button>
-<button className="btn btn-primary">Primary</button>
-<button className="btn btn-secondary">Secondary</button>
-<button className="btn btn-accent">Accent</button>
-<button className="btn btn-ghost">Ghost</button>
-<button className="btn btn-link">Link</button>
-      </div>
-     
-    </>
+<div>
+  <RouterProvider router={route}>
+
+  </RouterProvider>
+</div>
   )
 }
 
